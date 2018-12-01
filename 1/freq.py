@@ -18,8 +18,7 @@ def calculate_part2(steps: list) -> int():
     """
     freq_history = set()
     freq = 0
-    not_found = True
-    while not_found:
+    while True:
         for step in steps:
             freq_history.add(freq)
             freq += step
@@ -34,4 +33,5 @@ if __name__ == '__main__':
         for line in instructions:
             steps.append(int(line))
 
+    print(calculate_part1(steps))
     print(calculate_part2(steps))
