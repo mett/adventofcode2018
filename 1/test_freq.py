@@ -3,8 +3,6 @@ Advent of Code day 1 solution.
 
 Test suite for solution of day 1.
 """
-import unittest
-
 import freq
 
 
